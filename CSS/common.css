@@ -50,3 +50,41 @@ html {
 #header .header-wrapper .user-actions a:hover {
     text-decoration-line: underline;
 }
+
+.loader-backdrop {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 1);
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.loader2 > div {
+    border: 5px solid red;
+    height: 5rem;
+    width: 5rem;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border-radius: 50%;
+    animation: spinner2 2s linear infinite;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes spinner2 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
